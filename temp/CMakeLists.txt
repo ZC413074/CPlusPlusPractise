@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 2.8.0)
 add_definitions(-DUNICOD -D_UNICOD)
 project(zcTest)
 set(CMAKE_CXX_STANDARD 11)
-SET(CMAKE_BUILD_TYPE "release")
-SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O2 -Wall -g")
-SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O2 -Wall -g")
+#SET(CMAKE_BUILD_TYPE "release")
+#SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O2 -Wall -g")
+#SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O2 -Wall -g")
 
 include_directories(./)
 
 file(GLOB_RECURSE source ./*.h  ./*.cpp )
-source_group(Temp FILES ${source})
+#source_group(Temp FILES ${source})
 add_executable(${PROJECT_NAME} ${source})
 #target_link_libraries(zcTest PUBLIC Calibration)
 #target_include_directories(${PROJECT_NAME} PRIVATE 
